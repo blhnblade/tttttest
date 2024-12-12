@@ -104,7 +104,7 @@ function chatWidget(){
         cursor: pointer;
       }
       .chat-bubble-text{
-        font-family: inherit;
+        font-family: 'Inter', 'Segoe UI' !important;
         font-size: 16px;
         font-weight: 600;
         line-height: 24px;
@@ -119,12 +119,12 @@ function chatWidget(){
         position: absolute;
         top: 0;
         right: 0;
-        width: 20px;
-        min-width: 20px;
-        max-width: 20px;
-        height: 20px;
-        max-height: 20px;
-        min-height: 20px;
+        width: 13px;
+        min-width: 13px;
+        max-width: 13px;
+        height: 13px;
+        max-height: 13px;
+        min-height: 13px;
         border-radius: 50%;
         background-color: #00D35B;
         animation-name: opacity-emergence;
