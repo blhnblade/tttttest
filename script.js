@@ -50,7 +50,7 @@ function chatWidget(){
       const style = document.createElement('style');
       style.innerHTML = `
       .chat-widget-container * {
-        font-family: 'Inter', 'Segoe UI';
+        font-family: 'Inter', 'Trebuchet MS', 'Segoe UI';
         box-sizing: border-box;
         padding: 0px;
         margin: 0px;
@@ -114,7 +114,7 @@ function chatWidget(){
         cursor: pointer;
       }
       .chat-bubble-text{
-        font-family: 'Inter', 'Segoe UI' !important;
+        font-family: 'Inter', 'Trebuchet MS', 'Segoe UI' !important;
         font-size: 16px;
         font-weight: 600;
         line-height: 24px;
