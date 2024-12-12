@@ -624,9 +624,11 @@ function chatWidget(){
   
       defineUserAgentIsMobile() {
         const userAgent = window.navigator.userAgent
+        const isMobile = false
         for (let i = 0; i < this.mobileUserAgents.length ; i++){
-          return userAgent.includes(this.mobileUserAgents[i])
+          if (userAgent.includes(this.mobileUserAgents[i])) isMobile = true
         }
+        return isMobile
       }, 
   
       defineIfChatWasOpened() {
@@ -672,7 +674,6 @@ function chatWidget(){
       }
     },
     this.getBotMessage = (message)=>{
-      message += '*тест* тест тест *тест* тест тест *тест*'
       let parseMessage = globalThis.convertingFunction.parseLinks(message) 
       parseMessage = globalThis.convertingFunction.parseBoldText(parseMessage) 
       const bMessage = document.createElement('div')
@@ -940,7 +941,6 @@ function chatWidget(){
       },
   
       data: '',
-      
   
       async getLocationData(){
         try{
@@ -979,6 +979,6 @@ function chatWidget(){
   
   (function(){
     const chat = new chatWidget()
-    chat.openWebSoket('api.goaima.ai');
+    chat.openWebSoket('api.goaima.ai')
   })();
   
