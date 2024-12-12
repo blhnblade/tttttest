@@ -979,6 +979,6 @@ function chatWidget(){
   
   (function(){
     const chat = new chatWidget()
-    chat.openWebSoket('api.goaima.ai')
+    chat.openWebSoket('api.dev.goaima.ai')
   })();
   
