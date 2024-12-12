@@ -4,6 +4,7 @@ function chatWidget(){
     this.config = {}
   
     this.init = ()=>{
+      this.setupFonts()
       this.insertChat()
       this.loadMessageHistory()
       this.autoSizeWidth()
@@ -33,6 +34,15 @@ function chatWidget(){
         globalThis.checkFirstOpening.isOpened = true
         this.removeEventListener('click', globalThis.checkFirstOpening.handler)
       }
+    }
+  
+    this.setupFonts = () => {
+      const head = document.querySelector('head')
+      const font = document.createElement('div')
+      font.innerHTML = `<link rel="preconnect" href="https://fonts.googleapis.com">
+                        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">`
+      head.appendChild(font.firstElementChild)
     }
   
     this.insertChat = (colorSettings)=>{
