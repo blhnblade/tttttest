@@ -104,6 +104,7 @@ function chatWidget(){
         cursor: pointer;
       }
       .chat-bubble-text{
+        font-family: inherit;
         font-size: 16px;
         font-weight: 600;
         line-height: 24px;
@@ -111,6 +112,7 @@ function chatWidget(){
         user-select: none;
       }
       .semi-bold{
+        display: inline;
         font-weight: 600;
       }
       .chat-unread-message-icon{
@@ -623,12 +625,11 @@ function chatWidget(){
       mobileUserAgents: ['android', 'iphone', 'ipad', 'ipod', 'windows phone', 'blackberry', 'webos', 'symbian', 'bada', 'tizen', 'kaios', 'mobile', 'silk', 'opera mini', 'opera mobi', 'chrome mobile', 'crios', 'fxios', 'ucbrowser', 'samsungbrowser', 'qqbrowser'],
   
       defineUserAgentIsMobile() {
-        const userAgent = window.navigator.userAgent
-        const isMobile = false
+        const userAgent = window.navigator.userAgent.toLowerCase()
         for (let i = 0; i < this.mobileUserAgents.length ; i++){
-          if (userAgent.includes(this.mobileUserAgents[i])) isMobile = true
+          if (userAgent.includes(this.mobileUserAgents[i])) return true
         }
-        return isMobile
+        return false
       }, 
   
       defineIfChatWasOpened() {
