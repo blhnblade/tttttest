@@ -126,7 +126,7 @@ function chatWidget(){
         user-select: none;
       }
       .semi-bold{
-        display: inline;
+        display: inline-block;
         font-weight: 600;
       }
       .chat-unread-message-icon{
