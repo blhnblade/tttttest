@@ -128,7 +128,7 @@ function chatWidget(){
      .semi-bold {
         display: inline;
         font-size: 14px!important;
-        font-weight: 900!important;
+        font-weight: 600!important;
         font-family: 'Inter', sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
