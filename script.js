@@ -41,7 +41,8 @@ function chatWidget(){
         const fontLinks = `
             <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="anonymous">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
-            <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@400&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@600&display=swap" rel="stylesheet">
         `;
         head.insertAdjacentHTML('beforeend', fontLinks);
     };
@@ -127,11 +128,12 @@ function chatWidget(){
       }
      .semi-bold {
         display: inline-block;
-        font-weight: 600;
-        font-family: 'Inter', sans-serif;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-        text-rendering: optimizeLegibility;
+        font-size: 14px!important;
+        font-weight: 600!important;
+        font-family: 'Inter', sans-serif!important;
+        -webkit-font-smoothing: antialiased!important;
+        -moz-osx-font-smoothing: grayscale!important;
+        text-rendering: optimizeLegibility!important;
       }
       .chat-unread-message-icon{
         position: absolute;
