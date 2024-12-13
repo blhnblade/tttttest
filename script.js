@@ -125,9 +125,13 @@ function chatWidget(){
         color: #18182A;
         user-select: none;
       }
-      .semi-bold{
+     .semi-bold {
         display: inline-block;
         font-weight: 600;
+        font-family: 'Inter', sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeLegibility;
       }
       .chat-unread-message-icon{
         position: absolute;
