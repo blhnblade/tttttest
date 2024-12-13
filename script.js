@@ -52,7 +52,7 @@ function chatWidget(){
       style.innerHTML = `
       .chat-widget-container * {
         font-family: 'Inter', 'Trebuchet MS', 'Segoe UI';
-         -webkit-font-smoothing: antialiased;
+        -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         text-rendering: optimizeLegibility;
         box-sizing: border-box;
@@ -126,13 +126,13 @@ function chatWidget(){
         user-select: none;
       }
      .semi-bold {
-        display: inline-block;
+        display: inline-flex;
         font-size: 14px!important;
         font-weight: 600!important;
-        font-family: 'Inter', sans-serif!important;
-        -webkit-font-smoothing: antialiased!important;
-        -moz-osx-font-smoothing: grayscale!important;
-        text-rendering: optimizeLegibility!important;
+        font-family: 'Inter', sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeLegibility;
       }
       .chat-unread-message-icon{
         position: absolute;
