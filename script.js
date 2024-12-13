@@ -41,8 +41,7 @@ function chatWidget(){
         const fontLinks = `
             <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="anonymous">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
-            <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@400&display=swap" rel="stylesheet">
-            <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@600&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@400;600&display=swap" rel="stylesheet">
         `;
         head.insertAdjacentHTML('beforeend', fontLinks);
     };
