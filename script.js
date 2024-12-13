@@ -37,16 +37,13 @@ function chatWidget(){
     }
   
     this.setupFonts = () => {
-      const head = document.querySelector('head');
-      const font = document.createElement('div');
-      font.innerHTML = `
-        <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="anonymous">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-      `;
-      setTimeout(() => {
-          head.appendChild(font.firstElementChild);
-      }, 0)
+        const head = document.querySelector('head');
+        const fontLinks = `
+            <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="anonymous">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+            <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+        `;
+        head.insertAdjacentHTML('beforeend', fontLinks);
     };
   
     this.insertChat = (colorSettings)=>{
