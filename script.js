@@ -126,7 +126,7 @@ function chatWidget(){
         user-select: none;
       }
      .semi-bold {
-        display: inline-flex;
+        display: inline;
         font-size: 14px!important;
         font-weight: 600!important;
         font-family: 'Inter', sans-serif;
